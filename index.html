@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    </head>
+<body>
+    <script src="https://kit.fontawesome.com/f33d298643.js" crossorigin="anonymous"></script>
+    <section class="header">
+    <nav>
+        <a href="index.html"><img src="logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"> </i>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">COURSE</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"> </i>
+    </nav>
+    <div class="textbox">
+        <h1>World's Biggest University</h1>
+        <p>Making website is now one of the easiest thing in the world.You just need to learn HTML, CSS, javascript and you are good to go.</p>
+        <a href="" class="hero-btn">Visit us to know more</a>
+    </div>
+</section>
+<!--course-->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p> we offer a diverse range of programs designed to provide students with the knowledge,<br> skills,
+         and experience needed to succeed in their chosen careers.</p>
+    <div class="row">
+        <div class="course-col">
+            <h2>Intermediate</h2>
+            <p>Our courses are thoughtfully designed to equip students with a strong academic foundation <br>
+                and practical expertise. We offer programs across various fields, including <br>
+                <strong>Arts & Humanities,</strong> <strong>Sciences,</strong> <strong>Engineering & Technology,</strong> <br>
+                <strong>Business & Management,</strong> <strong>Health & Medicine,</strong> <strong>Design & Architecture,</strong> <br>
+                ensuring that students have access to both theoretical knowledge and hands-on experience. <br>
+                Whether you are looking to deepen your understanding in a specific area or explore new interests, <br>
+                our diverse curriculum empowers you to thrive and excel in your academic and professional pursuits.
+                "</p>
+        </div>
+    </div>
+</section>
+<!----javascript-->
+<script>
+    var navLinks=document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
